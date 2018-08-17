@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<odoo>
+    <!--
+    =============================================================
+    Hometest
+    =============================================================
+    -->
+    <menuitem
+        id="hometest_menu_root"
+        name="Hometest"
+        web_icon="mail,static/description/icon.png"
+        groups="base.group_user"
+        sequence="10"/>
+    <!--
+    =============================================================
+     Hometest > Hometest 
+    =============================================================
+    -->
+    <menuitem
+        id="hometest_menu"
+        name="Hometest"
+        parent="hometest_menu_root"
+        action="hometest_action"
+        sequence="100"/>
+
+</odoo>
