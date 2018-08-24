@@ -90,7 +90,7 @@ class PasswordManager:
         while True:
             in_line = in_file.readline()
             if not in_line:
-                break
+                return True
             in_line = in_line[:-1]
             user_name_stored, password_encrypted_stored = in_line.split(",")
             if user_name == user_name_stored:
